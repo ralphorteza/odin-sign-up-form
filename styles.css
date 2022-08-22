@@ -3,7 +3,7 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
+/* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+/* HTML5 display-role reset for older browsers 
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -45,32 +45,54 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-}
+} */
 /**************** End of Myer Resest ******************/
 
 
+
 .container, html, body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 12px;
   height: 100%;
   margin: 0;
 }
 
 .container {
   display: flex;
-/*   flex-direction: row; */
+  /*   flex-direction: row; */
 }
 
-.hero-shot {
+.card-shot {
+  flex: 1 1 0%;
+  min-width: 300px;
+  max-width: 500px;
   background-color: aqua;
-  flex-grow: 1;
 }
 
-/* .hero-image {
+.card-image {
+/*   position: absolute; */
   height: 100%;
   width: auto;
 }
- */
+
+.card-body {
+  position: absolute;
+  width: 100%;
+  background: black;
+  opacity: 0.6;
+  color: white;
+}
 .call-to-action {
+  display: flex;
+  flex-direction: column;
+  flex: 1.7 1 0%;
+  align-items: center;
+  justify-content: center;
+  
   background-color: gray; 
-  flex-grow: 2;
 }
 
+
+.input {
+  appearance: none;
+}
