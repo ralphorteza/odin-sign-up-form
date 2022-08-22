@@ -62,33 +62,58 @@ table {
 }
 
 .card-container {
-/*   position: relative; */
-  flex: 1 1 0%;
+  position: relative;
+  flex: 1;
   min-width: 300px;
   max-width: 500px; 
-/*   background-color: aqua; */
 }
 
 .card-image {
-/* position: absolute; */
+  position: absolute;
   height: 100%;
-  width: auto;
+  min-width: 300px;
+  max-width: 500px; 
 }
 
+
 .card-body {
+  display: flex;
+  justify-content:  center;
+  align-items: center;
+  
   position: absolute;
+  top: 225px;
+
   width: 100%;
   background: black;
   opacity: 0.6;
   color: white;
+  
+  border: 1px solid red;
+}
+
+/**** TODO: format correct font style ****/
+/* @font-face {
+  font-family: norse;
+  src: url('assets/Norse-Bold.otf')format('otf');
+  font-weight: normal;
+  font-style: normal;
+}
+.card-body h1 {
+  font: 1 em "norse", monospace;
+} */
+.card-logo {
+ width: 80px;
+ height: auto;
 }
 .call-to-action {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex: 1.7 1 0%;
   align-items: center;
   justify-content: center;
-  
+  min-width: 500px;
   background-color: gray; 
 }
 
