@@ -50,27 +50,27 @@ table {
 
 
 
-.container, html, body {
+.wrapper, html, body {
   font-family: 'Arial', 'Helvetica', sans-serif;
   font-size: 12px;
   height: 100%;
   margin: 0;
 }
 
-.container {
+.wrapper {
   display: flex;
-  /*   flex-direction: row; */
 }
 
-.card-shot {
+.card-container {
+/*   position: relative; */
   flex: 1 1 0%;
   min-width: 300px;
-  max-width: 500px;
-  background-color: aqua;
+  max-width: 500px; 
+/*   background-color: aqua; */
 }
 
 .card-image {
-/*   position: absolute; */
+/* position: absolute; */
   height: 100%;
   width: auto;
 }
