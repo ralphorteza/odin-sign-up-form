@@ -89,7 +89,7 @@ table {
   opacity: 0.6;
   color: white;
   
-  border: 1px solid red;
+/*   border: 1px solid red; */
 }
 
 /**** TODO: format correct font style ****/
@@ -120,4 +120,8 @@ table {
 
 .input {
   appearance: none;
+}
+
+.headline {
+  margin: 20px;
 }
