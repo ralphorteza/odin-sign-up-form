@@ -173,9 +173,9 @@ input + span::before {
   top: 5px;
 }
 
-input:invalid {
+input[type="password"]:invalid {
   border: 2px solid red;
-}
+} 
 
 input:invalid + span::before {
   content: '✖';
@@ -199,6 +199,14 @@ input:required + span::after {
 }
 
 input[type="submit"] {
+  appearance: none;
   color: #f9fafb;
   background-color: #596D48;
+}
+
+/* The Log in link */
+.log-in > p > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #596D48;
 }
