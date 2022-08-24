@@ -124,6 +124,14 @@ table {
   flex-flow: column;
 }
 
+
+
+.form-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
 /* .form-items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -137,4 +145,19 @@ input {
 
 input:required {
   border: 1px solid black;
+}
+
+input + span {
+  position: relative;
+}
+
+input:required + span::after {
+  font-size: 0.7rem;
+  position: absolute;
+  content: "required";
+  color: white;
+  background-color: black;
+  padding: 5px 10px;
+  top: -26px;
+  left: -70px;
 }
