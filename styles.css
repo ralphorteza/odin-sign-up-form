@@ -119,15 +119,25 @@ table {
 }
 
 .call-to-action > * {
-  margin: 10px 30px;
+  margin: 1px 30px;
   display: flex;
   flex-flow: column;
 }
 
 
-
+button, label, input {
+  display: block;
+  font-family: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+}
 .form-item {
-  margin-bottom: 20px;
+/*   margin-bottom: 20px; */
   display: flex;
   flex-flow: row wrap;
 }
@@ -149,6 +159,26 @@ input:required {
 
 input + span {
   position: relative;
+}
+
+input + span::before {
+  position: absolute;
+  right: -20px;
+  top: 5px;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:invalid + span::before {
+  content: '✖';
+  color: red;
+}
+
+input:valid + span::before {
+  content: '✓';
+  color: green;
 }
 
 input:required + span::after {
