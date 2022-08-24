@@ -115,13 +115,19 @@ table {
   justify-content: center;
 
   min-width: 500px;
-  background-color: gray; 
+  background-color: #f9fafb; 
 }
 
 .call-to-action > * {
   margin: 1px 30px;
   display: flex;
   flex-flow: column;
+
+  border: 2px solid red;
+}
+
+.headline {
+  width: 545px;
 }
 
 
@@ -190,4 +196,9 @@ input:required + span::after {
   padding: 5px 10px;
   top: -26px;
   left: -70px;
+}
+
+input[type="submit"] {
+  color: #f9fafb;
+  background-color: #596D48;
 }
