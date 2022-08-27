@@ -60,6 +60,8 @@ table {
 
 .wrapper {
   display: flex;
+  min-width: 950px;
+  min-height: 650px;
 }
 
 
@@ -74,7 +76,6 @@ table {
 .card-image {
   position: absolute;
   height: 100%;
-
 }
 
 
@@ -111,7 +112,16 @@ table {
 
 
 /****************** Call to Action *******************/
-
+.cta {
+  flex: 2 1 0;
+  position: relative;
+  
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #f9fafb;
+  min-width: 500px;
+}
 
 
 
