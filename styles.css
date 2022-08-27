@@ -112,15 +112,27 @@ table {
 
 
 /****************** Call to Action *******************/
+
 .cta {
   flex: 2 1 0;
   position: relative;
-  
+
   display: flex;
   flex-direction: column;
-  
+
   background-color: #f9fafb;
+  padding-left: 20px;
   min-width: 500px;
+}
+/* 
+.cta > * {
+  margin-left: 20px;
+}
+ */
+.headline {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  width: 560px;
 }
 
 
@@ -148,17 +160,17 @@ input[type="password"]:invalid {
   border: 2px solid red;
 } 
 
-input:invalid + span::before {
+/* input:invalid + span::before {
   content: '✖';
   color: red;
-}
+} */
 
-input:valid + span::before {
+/* input:valid + span::before {
   content: '✓';
   color: green;
-}
+} */
 
-input:required + span::after {
+/* input:required + span::after {
   font-size: 0.7rem;
   position: absolute;
   content: "required";
@@ -167,7 +179,7 @@ input:required + span::after {
   padding: 5px 10px;
   top: -26px;
   left: -70px;
-}
+} */
 
 input[type="submit"] {
   appearance: none;
