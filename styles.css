@@ -124,17 +124,29 @@ table {
   padding-left: 20px;
   min-width: 500px;
 }
-/* 
-.cta > * {
-  margin-left: 20px;
-}
- */
+
 .headline {
   margin-top: 100px;
   margin-bottom: 40px;
   width: 560px;
 }
 
+.form-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 12px;
+  column-gap: 80px;
+
+  max-width: 650px;
+}
+
+/* each form-item has label, input, and span tags*/
+.form-item {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
 
 
  /******************* input validations ********************/

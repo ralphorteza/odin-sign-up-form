@@ -32,38 +32,40 @@
         <form action="">
           <fieldset>
               <h1>Let's do this!</h1>
-              <div class="form-item">
-                <label for="first_name">FIRST NAME</label>
-                <input type="text" name="first_name" id="first_name" required>
-                <span></span>
-              </div>
-              <div class="form-item">
-                <label for="last_name">LAST NAME</label>
-                <input type="text" name="last_name" id="last_name" required>
-                <span></span>
-              </div>
-              <div class="form-item">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email" required>
-                <span></span>
-              </div>
-              <div class="form-item">
-                <label for="phone_number">PHONE NUMBER</label>
-                <input type="tel" name="phone_number" id="phone_number"
-                  optional
-                  pattern="^([0-9]{3}-*[0-9]{3}-*[0-9]{4})$"
-                  placeholder="123-456-7890">
-                <span></span>
-              </div>
-              <div class="form-item">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password" required minlength="8">
-                <span></span>
-              </div>
-              <div class="form-item">
-                <label for="password">CONFIRM PASSWORD</label>
-                <input type="password" name="confirm_password" id="confirm_password" required>
-                <span></span>
+              <div class="form-items">
+                <div class="form-item">
+                  <label for="first_name">FIRST NAME</label>
+                  <input type="text" name="first_name" id="first_name" required>
+                  <span></span>
+                </div>
+                <div class="form-item">
+                  <label for="last_name">LAST NAME</label>
+                  <input type="text" name="last_name" id="last_name" required>
+                  <span></span>
+                </div>
+                <div class="form-item">
+                  <label for="email">EMAIL</label>
+                  <input type="email" name="email" id="email" required>
+                  <span></span>
+                </div>
+                <div class="form-item">
+                  <label for="phone_number">PHONE NUMBER</label>
+                  <input type="tel" name="phone_number" id="phone_number"
+                    optional
+                    pattern="^([0-9]{3}-*[0-9]{3}-*[0-9]{4})$"
+                    placeholder="123-456-7890">
+                  <span></span>
+                </div>
+                <div class="form-item">
+                  <label for="password">PASSWORD</label>
+                  <input type="password" name="password" id="password" required minlength="8">
+                  <span></span>
+                </div>
+                <div class="form-item">
+                  <label for="password">CONFIRM PASSWORD</label>
+                  <input type="password" name="confirm_password" id="confirm_password" required>
+                  <span></span>
+                </div>
               </div>
           </fieldset>
           <p><input type="submit" value="Create Account"></p>
