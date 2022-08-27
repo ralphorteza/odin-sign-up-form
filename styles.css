@@ -111,56 +111,9 @@ table {
 
 
 /****************** Call to Action *******************/
-/* .call-to-action {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex: 1.7 1 0%;
-/*   align-items: center; *
-  align-items: flex-start;
-  justify-content: center;
 
-  min-width: 500px;
-  background-color: #f9fafb; 
-}
- */
-/* .call-to-action > * {
-  margin: 1px 30px;
-  display: flex;
-  flex-flow: column;
 
-  border: 2px solid red;
-} */
 
-/* .headline {
-  width: 545px;
-}
- */
-
-/* button, label, input {
-/*   display: block; *
-  font-family: inherit;
-  font-size: 100%;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 5px;
-  height: 30px;
-} */
-/* .form-item {
-/*   margin-bottom: 20px; *
-  display: flex;
-  flex-wrap: wrap;
-  
-
-} */
-
-/* .form-items {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
- */
 
  /******************* input validations ********************/
 input {
