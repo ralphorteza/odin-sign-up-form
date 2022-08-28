@@ -92,19 +92,19 @@ table {
   opacity: 0.6;
   color: white;
   
-/*   border: 1px solid red; */
 }
 
 /**** TODO: format correct font style ****/
-/* @font-face {
-  font-family: norse;
-  src: url('assets/Norse-Bold.otf')format('otf');
-  font-weight: normal;
-  font-style: normal;
+@font-face {
+  font-family: 'norse';
+  src: url('assets/Norse-Bold.otf')format('opentype');
 }
-.card-body h1 {
-  font: 1 em "norse", monospace;
-} */
+.card-body > h1 {
+  font-family: 'norse', serif;
+  font-size: 8rem;
+
+  margin: 12px 0;
+}
 .card-logo {
  width: 80px;
  height: auto;
