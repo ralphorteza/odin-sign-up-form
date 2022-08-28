@@ -120,15 +120,26 @@ table {
   display: flex;
   flex-direction: column;
 
-  background-color: #f9fafb;
-  padding-left: 20px;
+  background-color: #eff1f7;
+
   min-width: 500px;
+}
+
+.cta > * {
+  padding-left: 20px;
 }
 
 .headline {
   margin-top: 100px;
   margin-bottom: 40px;
   width: 560px;
+}
+
+.form-request {
+  background-color:  #f9fafb;
+  padding-bottom: 20px;
+  box-shadow:
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 
 .form-items {
@@ -148,15 +159,29 @@ table {
   width: 200px;
 }
 
+fieldset {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  border: none;
+}
+
 
  /******************* input validations ********************/
 input {
   appearance: none;
 }
 
-input:required {
-  border: 1px solid black;
+.form-item > input {
+  width: 220px;
+  height: 20px;
+  border-radius: 6px;
+  border: 1px solid #E5E7EB;
 }
+
+/* input:required {
+  border: 1px solid black;
+} */
 
 input + span {
   position: relative;
@@ -169,29 +194,8 @@ input + span::before {
 }
 
 input[type="password"]:invalid {
-  border: 2px solid red;
+  border: 1px solid red;
 } 
-
-/* input:invalid + span::before {
-  content: '✖';
-  color: red;
-} */
-
-/* input:valid + span::before {
-  content: '✓';
-  color: green;
-} */
-
-/* input:required + span::after {
-  font-size: 0.7rem;
-  position: absolute;
-  content: "required";
-  color: white;
-  background-color: black;
-  padding: 5px 10px;
-  top: -26px;
-  left: -70px;
-} */
 
 input[type="submit"] {
   appearance: none;
